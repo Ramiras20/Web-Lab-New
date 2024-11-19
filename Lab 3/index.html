@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   YouTube Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <div class="flex">
+   <!-- Sidebar -->
+   <div class="w-1/6 bg-white h-screen p-4">
+    <div class="flex items-center mb-4">
+     <i class="fab fa-youtube text-red-600 text-2xl">
+     </i>
+     <span class="text-xl font-bold ml-2">
+      Premium
+     </span>
+    </div>
+    <div class="mb-4">
+     <ul>
+      <li class="flex items-center mb-2">
+       <i class="fas fa-home text-xl">
+       </i>
+       <span class="ml-4">
+        Головна
+       </span>
+      </li>
+      <li class="flex items-center mb-2">
+       <i class="fas fa-play-circle text-xl">
+       </i>
+       <span class="ml-4">
+        YouTube Shorts
+       </span>
+      </li>
+      <li class="flex items-center mb-2">
+       <i class="fas fa-film text-xl">
+       </i>
+       <span class="ml-4">
+        Підписки
+       </span>
+      </li>
+      <li class="flex items-center mb-2">
+       <i class="fas fa-music text-xl">
+       </i>
+       <span class="ml-4">
+        YouTube Music
+       </span>
+      </li>
+     </ul>
+    </div>
+    <div class="mb-4">
+     <h2 class="font-bold mb-2">
+      Ви в
+     </h2>
+     <ul>
+      <li class="flex items-center mb-2">
+       <i class="fas fa-history text-xl">
+       </i>
+       <span class="ml-4">
+        Ваш канал
+       </span>
+      </li>
+      <li class="flex items-center mb-2">
+       <i class="fas fa-clock text-xl">
+       </i>
+       <span class="ml-4">
+        Історія
+       </span>
+      </li>
+      <li class="flex items-center mb-2">
+       <i class="fas fa-play text-xl">
+       </i>
+       <span class="ml-4">
+        Переглянути пізніше
+       </span>
+      </li>
+      <li class="flex items-center mb-2">
+       <i class="fas fa-thumbs-up text-xl">
+       </i>
+       <span class="ml-4">
+        Вподобані відео
+       </span>
+      </li>
+      <li class="flex items-center mb-2">
+       <i class="fas fa-cog text-xl">
+       </i>
+       <span class="ml-4">
+        Налаштування
+       </span>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h2 class="font-bold mb-2">
+      Підписки
+     </h2>
+     <ul>
+      <li class="flex items-center mb-2">
+       <img alt="Channel 1" class="rounded-full" height="24" src="https://storage.googleapis.com/a1aa/image/DKKNl1hWworyEhZSc4Ea2enz9wpMQn2hupQ8zxcaLO3if8kTA.jpg" width="24"/>
+       <span class="ml-4">
+        WAS Популярне
+       </span>
+      </li>
+      <li class="flex items-center mb-2">
+       <img alt="Channel 2" class="rounded-full" height="24" src="https://storage.googleapis.com/a1aa/image/yef6YKsvQosNVUMJ0gBgcnadvpDKtj1fOKjBtcmx0CWcezTOB.jpg" width="24"/>
+       <span class="ml-4">
+        ROZETKA
+       </span>
+      </li>
+      <li class="flex items-center mb-2">
+       <img alt="Channel 3" class="rounded-full" height="24" src="https://storage.googleapis.com/a1aa/image/slTX9WkBH4IKDplvBee3HoSSvIGneq0If0AqaUTSnOpa9zTOB.jpg" width="24"/>
+       <span class="ml-4">
+        Андрій Макар
+       </span>
+      </li>
+      <li class="flex items-center mb-2">
+       <img alt="Channel 4" class="rounded-full" height="24" src="https://storage.googleapis.com/a1aa/image/bu3Hsk8FdvrRMxY4waZ1jsc10KspG6gDhk28KLKn67WwPP5E.jpg" width="24"/>
+       <span class="ml-4">
+        ROZETKA GAME
+       </span>
+      </li>
+      <li class="flex items-center mb-2">
+       <img alt="Channel 5" class="rounded-full" height="24" src="https://storage.googleapis.com/a1aa/image/k2zCZfCDeKiJWkKy1DKHmqD3rPiwmOygpxR5eJXwdLrkezTOB.jpg" width="24"/>
+       <span class="ml-4">
+        Хащі
+       </span>
+      </li>
+      <li class="flex items-center mb-2">
+       <img alt="Channel 6" class="rounded-full" height="24" src="https://storage.googleapis.com/a1aa/image/jgb3jeOfRluhEEwrKt0cpnyBPPWnhTvcR0fCJYOqXU1GezTOB.jpg" width="24"/>
+       <span class="ml-4">
+        Новини 24
+       </span>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="w-5/6 p-4">
+    <!-- Top Navigation -->
+    <div class="flex items-center justify-between mb-4">
+     <div class="flex items-center">
+      <input class="border rounded-full px-4 py-2 w-96" placeholder="Пошук" type="text"/>
+      <button class="ml-2 bg-gray-200 p-2 rounded-full">
+       <i class="fas fa-search">
+       </i>
+      </button>
+     </div>
+     <div class="flex items-center">
+      <i class="fas fa-bell text-xl mr-4">
+      </i>
+      <img alt="User Avatar" class="rounded-full" height="32" src="https://storage.googleapis.com/a1aa/image/vvcUvvS30driPpys7PT56Gy3WVToXsrEJyNUENkHFsCxPP5E.jpg" width="32"/>
+     </div>
+    </div>
+    <!-- Categories -->
+    <div class="flex mb-4">
+     <button class="bg-gray-200 px-4 py-2 rounded-full mr-2">
+      Усі
+     </button>
+     <button class="bg-gray-200 px-4 py-2 rounded-full mr-2">
+      Музика
+     </button>
+     <button class="bg-gray-200 px-4 py-2 rounded-full mr-2">
+      Прямі трансляції
+     </button>
+     <button class="bg-gray-200 px-4 py-2 rounded-full mr-2">
+      Новини
+     </button>
+     <button class="bg-gray-200 px-4 py-2 rounded-full mr-2">
+      Природний добір
+     </button>
+     <button class="bg-gray-200 px-4 py-2 rounded-full mr-2">
+      Образотворчі мистецтва
+     </button>
+     <button class="bg-gray-200 px-4 py-2 rounded-full mr-2">
+      Мультфільми
+     </button>
+     <button class="bg-gray-200 px-4 py-2 rounded-full mr-2">
+      Недавні завантаження
+     </button>
+     <button class="bg-gray-200 px-4 py-2 rounded-full mr-2">
+      Ви дивились
+     </button>
+    </div>
+    <!-- Video Grid -->
+    <div class="grid grid-cols-4 gap-4">
+     <div class="bg-white p-2 rounded-lg">
+      <img alt="Video 1" class="rounded-lg mb-2" height="180" src="https://storage.googleapis.com/a1aa/image/vtZcNKBQiq7NF5xUcjdQOrNpgBApXIdNnZoYqCT6nmF2PP5E.jpg" width="320"/>
+      <h3 class="font-bold">
+       Як збільшиться борг України за зовнішніми позиками?
+      </h3>
+      <p class="text-sm text-gray-600">
+       78 тис. переглядів • 1 місяць тому
+      </p>
+     </div>
+     <div class="bg-white p-2 rounded-lg">
+      <img alt="Video 2" class="rounded-lg mb-2" height="180" src="https://storage.googleapis.com/a1aa/image/JLbef6I3sGsMskc7OtpS56UHeWtxKKfdmcLlWBUHhrJs8zTOB.jpg" width="320"/>
+      <h3 class="font-bold">
+       Що Бісить Журналістку | Марія Шапка
+      </h3>
+      <p class="text-sm text-gray-600">
+       70 тис. переглядів • 4 місяці тому
+      </p>
+     </div>
+     <div class="bg-white p-2 rounded-lg">
+      <img alt="Video 3" class="rounded-lg mb-2" height="180" src="https://storage.googleapis.com/a1aa/image/JeTjSIlvhP1rMagwS8D296n0ffIOIqDKGiaIMrk8x2ZYezTOB.jpg" width="320"/>
+      <h3 class="font-bold">
+       Яке овочі вирощували Римляни?
+      </h3>
+      <p class="text-sm text-gray-600">
+       276 тис. переглядів • 11 місяців тому
+      </p>
+     </div>
+     <div class="bg-white p-2 rounded-lg">
+      <img alt="Video 4" class="rounded-lg mb-2" height="180" src="https://storage.googleapis.com/a1aa/image/kr3eHAlfoxp7D0kZlVll3meK5z04J1FzqRZiUMRptn7yezTOB.jpg" width="320"/>
+      <h3 class="font-bold">
+       How to Get Stuff Done When You Have ADHD
+      </h3>
+      <p class="text-sm text-gray-600">
+       1 млн переглядів • 7 років тому
+      </p>
+     </div>
+     <div class="bg-white p-2 rounded-lg">
+      <img alt="Video 5" class="rounded-lg mb-2" height="180" src="https://storage.googleapis.com/a1aa/image/ToTsULUb1tbGJZXUAYu66J7f6eF8yABKgXjKLFAfqzs7ezTOB.jpg" width="320"/>
+      <h3 class="font-bold">
+       Окупантська ідентифікація
+      </h3>
+      <p class="text-sm text-gray-600">
+       1 млн переглядів • 1 рік тому
+      </p>
+     </div>
+     <div class="bg-white p-2 rounded-lg">
+      <img alt="Video 6" class="rounded-lg mb-2" height="180" src="https://storage.googleapis.com/a1aa/image/BzSPpenXBfvYuU6OCGowRumS7WcfCPrbAd3NOChYiI35ezTOB.jpg" width="320"/>
+      <h3 class="font-bold">
+       Neo-Brutalism: The Rising Design Trend
+      </h3>
+      <p class="text-sm text-gray-600">
+       1 млн переглядів • 1 рік тому
+      </p>
+     </div>
+     <div class="bg-white p-2 rounded-lg">
+      <img alt="Video 7" class="rounded-lg mb-2" height="180" src="https://storage.googleapis.com/a1aa/image/YK1u9gYeLuVGP6jpEvO27PTMhvr6gMAvQjNOchPGSx2jf8kTA.jpg" width="320"/>
+      <h3 class="font-bold">
+       Лесь Подерев'янський Про Боба
+      </h3>
+      <p class="text-sm text-gray-600">
+       434 тис. переглядів • 5 років тому
+      </p>
+     </div>
+     <div class="bg-white p-2 rounded-lg">
+      <img alt="Video 8" class="rounded-lg mb-2" height="180" src="https://storage.googleapis.com/a1aa/image/yevt86fzHffeVlYartteMwA4fAfgDSIrJNhCSiWDuaxQaf5JnA.jpg" width="320"/>
+      <h3 class="font-bold">
+       Unveiling the Amazing Secret for Drawing the Perfect Portrait
+      </h3>
+      <p class="text-sm text-gray-600">
+       1,3 млн переглядів • 1 рік тому
+      </p>
+     </div>
+    </div>
+    <!-- YouTube Shorts -->
+    <div class="mt-4">
+     <h2 class="font-bold text-xl mb-2">
+      YouTube Shorts
+     </h2>
+     <div class="grid grid-cols-6 gap-4">
+      <div class="bg-white p-2 rounded-lg">
+       <img alt="Short 1" class="rounded-lg mb-2" height="90" src="https://storage.googleapis.com/a1aa/image/oR5wl33ajC5BG5YyxSoCQUBjIeDrflNHu5U6eXxbop1iezTOB.jpg" width="160"/>
+      </div>
+      <div class="bg-white p-2 rounded-lg">
+       <img alt="Short 2" class="rounded-lg mb-2" height="90" src="https://storage.googleapis.com/a1aa/image/7wwSBF9wJzaAFZWsGfhKfrKjR6Fq7OgodHi5PQ16tjCPf5JnA.jpg" width="160"/>
+      </div>
+      <div class="bg-white p-2 rounded-lg">
+       <img alt="Short 3" class="rounded-lg mb-2" height="90" src="https://storage.googleapis.com/a1aa/image/DXcN9318Hb5KEl3xOVqa4fqcqq5Z5jem5YFr4fRoa53qezTOB.jpg" width="160"/>
+      </div>
+      <div class="bg-white p-2 rounded-lg">
+       <img alt="Short 4" class="rounded-lg mb-2" height="90" src="https://storage.googleapis.com/a1aa/image/Dq9cEIhXPJb6DVIjka6n9ojyKJTfeRaPxDnrmVhRaFeQezTOB.jpg" width="160"/>
+      </div>
+      <div class="bg-white p-2 rounded-lg">
+       <img alt="Short 5" class="rounded-lg mb-2" height="90" src="https://storage.googleapis.com/a1aa/image/kXxseeVMfJZvGITXUQnMysOnlAfeIyKoDTEPCcNm7GfnyPP5E.jpg" width="160"/>
+      </div>
+      <div class="bg-white p-2 rounded-lg">
+       <img alt="Short 6" class="rounded-lg mb-2" height="90" src="https://storage.googleapis.com/a1aa/image/GuitmMYlusZHLlNfuIUueYSH38jCaPCYZmswUrts9qzUf5JnA.jpg" width="160"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,96 @@
+/* Основные стили для страницы */
+body {
+    font-family: 'Open Sans', sans-serif; /* Основной шрифт для текста */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1a1a1a, #004d4d); /* Черно-бирюзовый градиент фона */
+    color: #ffffff; /* Белый цвет текста для лучшей читаемости */
+}
+
+/* Заголовок и навигация */
+header {
+    background: #1a1a1a; /* Темно-серый фон */
+    color: #00b3b3; /* Бирюзовый текст */
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Увеличенная тень для заголовка */
+    font-family: 'Montserrat', sans-serif; /* Шрифт для заголовка */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; /* Увеличенный отступ */
+}
+
+nav ul li a {
+    color: #ffffff; /* Белый цвет текста */
+    text-decoration: none;
+    padding: 10px 20px; /* Увеличенные внутренние отступы для кнопок */
+    border-radius: 5px; /* Скругленные углы */
+    background: #00b3b3; /* Бирюзовый фон для кнопок */
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; /* Плавный переход */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для кнопок */
+}
+
+nav ul li a:hover {
+    background: #008c8c; /* Темнее бирюзовый фон при наведении */
+    color: #ffffff; /* Белый текст при наведении */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Более выраженная тень при наведении */
+    transform: translateY(-2px); /* Подъем кнопки при наведении */
+}
+
+/* Основной контент */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px; /* Увеличенный отступ между секциями */
+    padding: 20px;
+    background: #2a2a2a; /* Темно-серый фон для секций */
+    color: #ffffff; /* Белый текст для контента */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Более выраженная тень для секций */
+    transition: transform 0.3s; /* Плавный переход для секций */
+}
+
+section:hover {
+    transform: translateY(-2px); /* Подъем секции при наведении */
+}
+
+/* Стили для секций с лабораторными работами и практиками */
+section.practical,
+section.laboratory {
+    border: 2px solid #00b3b3; /* Бирюзовая обводка */
+    transition: transform 0.3s, box-shadow 0.3s; /* Плавный переход для секций */
+}
+
+section.practical:hover,
+section.laboratory:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3); /* Более выраженная тень при наведении */
+}
+
+/* Дополнительные стили для заголовков в секциях */
+section h2 {
+    color: #00b3b3; /* Бирюзовый цвет для заголовков */
+    border-bottom: 2px solid #004d4d; /* Подчеркивание заголовка */
+    padding-bottom: 10px; /* Отступ под заголовком */
+}
+
+/* Стили для подвала */
+footer {
+    background: #1a1a1a; /* Темно-серый фон вместо черного */
+    color: #00b3b3; /* Бирюзовый текст */
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);   
+}    

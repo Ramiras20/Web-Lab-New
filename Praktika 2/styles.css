@@ -1,0 +1,51 @@
+body {
+    text-align: center; 
+    font-family: Arial, sans-serif; /* Загальний стиль для тексту */
+    background-color: #f3f4f6; /* Світлий фон для сторінки */
+    color: #333; /* Колір тексту */
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: inline-block; 
+    text-align: left;
+    background-color: #ffffff; /* Фон форми */
+    color: #333; /* Колір тексту форми */
+    padding: 20px; /* Внутрішні відступи */
+    border-radius: 10px; /* Закруглені кути */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Тінь */
+    width: 300px; /* Ширина форми */
+    margin-top: 50px; /* Відступ зверху */
+}
+
+label {
+    display: block; 
+    margin-bottom: 10px; 
+    font-weight: bold; /* Напівжирний текст */
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+    width: 100%; /* Ширина в 100% від ширини форми */
+    padding: 8px; /* Внутрішні відступи */
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; /* Границя */
+    border-radius: 5px; /* Закруглені кути */
+    box-sizing: border-box; /* Враховувати padding у ширину */
+}
+
+input[type="submit"] {
+    width: 100%; 
+    padding: 10px; 
+    background-color: #007bff; /* Синій фон */
+    color: white; /* Білий текст */
+    border: none; 
+    border-radius: 5px; /* Закруглені кути */
+    cursor: pointer; /* Курсор для кнопки */
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Темніший синій при наведенні */
+}
+
